@@ -28,10 +28,13 @@
 
     <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="http://namey.muffinlabs.com/api.js"></script>
     <script>
 
     //Gives the user connectin a random numeric name
-    $('#name').val(Math.random().toFixed(8).toString().substr(2));
+    namey.get(function(name){
+      $('#name').val(name);
+    });
 
 
     //initializing the socket connection to listen to the server on different values
