@@ -1,0 +1,57 @@
+.welcome_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(247, 247, 247);
+    font-size: 50px;
+    font-family: Montserrat, sans-serif;
+    text-shadow: -2px -2px #444;
+    text-align: center;
+}
+
+body{
+    background: url('https://ununsplash.imgix.net/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-size: 70px;
+}
+
+.circle { 
+    position: absolute; 
+    border-radius: 50%;
+    background-image: -moz-linear-gradient( 90deg, rgb(44, 111, 219) 30%, rgb(44, 199, 219) 100%) 100%);
+    background-image: -webkit-linear-gradient( 90deg, #bf4c4c 0%, #f0cf8f 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(44, 111, 219) 30%, rgb(44, 199, 219) 100%));
+    left: 70%; 
+    top: 5%; 
+    width: 240px; 
+    height: 238px; 
+    z-index: 2; 
+   
+}
+
+#circle-text{
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    top: 40%;
+    left: 15%;
+    transform: rotate(16deg);
+
+}
+
+#banner {
+    background-color: rgb(191, 76, 76);
+    position: absolute;
+    left: -10%;
+    top: 45%;
+    width: 300px;
+    height: 51px;
+    z-index: 3;
+    transform: rotate(25deg)
+}
+
