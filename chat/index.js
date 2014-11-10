@@ -2,7 +2,6 @@ var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
-var colors = ['#AE331F', '#D68434', '#116A9F', '#360B95', '#5F209E'];
 var connections = {};
 
 app.get('/', function(req, res){
@@ -22,7 +21,8 @@ io.on('connection', function(socket){
 
   socket.on('user-ready', function(data){
     socket.name = data.name;
-    socket.color = data.color = colors[Math.floor(Math.random() * colors.length)];
+    //May need to change this so theere are only colors you can see well
+    socket.color = data.color = "#" + Math.random().toString(16).slice(2,8);
     io.emit('user-ready', data);
   });
 
